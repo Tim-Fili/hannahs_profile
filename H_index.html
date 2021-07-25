@@ -5,7 +5,7 @@
         <title>Hannah Filiatreau's Profile</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/H_normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/H_styles.css">
         <link rel="stylesheet" href="css/H_contact.css">
         <link rel="stylesheet" href="css/H_flexbox.css">
@@ -38,8 +38,8 @@
                             ------Small introduction------
                         </p>
                         <p class="top-content-tabs">
-                            <a class="btn proj-nav-lnk active" onclick="openInfo2(event, 'portfolio-content')">Portfolio</a> 
-                            <a class="btn proj-nav-lnk" onclick="openInfo2(event, 'contact-form')">Contact</a>
+                            <a class="btn proj-nav-lnk active top" onclick="openInfo2(event, 'portfolio-content')">Portfolio</a> 
+                            <a class="btn proj-nav-lnk top " onclick="openInfo2(event, 'contact-form')">Contact</a>
                         </p>
                     </div>
                     <div class="contact-photo">
@@ -52,9 +52,9 @@
             <!-- Projects Start -->
             <!-- *Remember* take a picture/screenshot of the blogs like upwork and make the link to the site -->
            <div id="projects-content" style="display: block;" class="tabs">
-               <section class="projects-header content">
+               <section class="content">
                     <div>
-                        <h2 class="projects-header2">
+                        <h2 class="projects-header">
                             "Projects"
                         </h2>
                     </div>
@@ -68,9 +68,9 @@
                 </section>
                 <section class="project-selection content">
                     <!-- KB Quotes and Images -->
-                    <div id="KB" style="display: none;" class="tab-content">
+                    <!-- <div id="KB" style="display: none;" class="tab-content"> -->
                         <div class="tab-text">
-                            <div>
+                            <div class>
                                 <h3>Kennedy Blue</h3>
                                 <!-- info -->
                                 <p>Beautiful bridal gowns and bridesmaids' dresses</p>
@@ -84,12 +84,12 @@
                         </div>
                         <div calss="aside">
                             <aside class="project-aside"></aside>
-                                <h3>More Info:</h3>
+                                <h3>More Info on this client:</h3>
                                 <p>
-                                    <a href="https://www.kennedyblue.com/blogs/weddings" target="_blank">Blogs</a>
+                                    <a href="https://www.kennedyblue.com/blogs/weddings" target="_blank">KennedyBlue Blogs</a>
                                 </p>
                                 <p>
-                                    <a href="https://www.kennedyblue.com/" target="_blank">Shop</a>
+                                    <a href="https://www.kennedyblue.com/" target="_blank">KennedyBlue.com</a>
                                 </p>
                         </div>
                         <div class="tab-img">
@@ -248,7 +248,7 @@
            </div>
            <!-- Projects End -->
            <!-- Content Form Start -->
-           <div id="contact-form content" style="display: none;" class="tabs">
+           <!-- <div id="contact-form content" style="display: none;" class="tabs"> -->
             <form action="H_index.html" method="post">
                 <h2>How Can I Help:</h2>
                     <fieldset>
@@ -306,7 +306,7 @@
         
         
         <!-- TALK THIS THROUGH WITH DON -->
-        <script>
+        <!-- <script>
 
             function openInfo(evt, toolsName) {
                 var i, tabcontent, tablinks;
@@ -336,7 +336,7 @@
                 evt.currentTarget.className += " active";                
                 }
              
-        </script> 
+        </script>  -->
     </body>
 </html>
 
