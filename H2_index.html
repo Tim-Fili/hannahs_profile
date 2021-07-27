@@ -221,37 +221,37 @@ I am eager to provide all of my clients with content that accurately represents 
  <!-- Projects End -->
 
  <!-- Content Form Start -->
- 
-           <div id="contact-form" style="display: none;" class="tabcontent2">
-            <form action="mailto:filiatreau14@gmail.com" name="form1" method="post" enctype="text/plain">
-                <h2>How Can I Help:</h2>
-                    <fieldset>
-                        <legend><span class="number">1</span> Your basic info</legend>
-                            <label for="name">Name: (Last, First)</label><br>
-                                <input type="text" id="name" name="user_name"><br>
-                            <label for="mail">Email:</label><br>
-                                <input type="email" id="mail" name="user_email">
-                    </fieldset>
-            
-                    <fieldset>
-                        <legend><span class="number">2</span> Your profile </legend>
-                            <label for="about">About: (Tell me a little about you business)</label><br>
-                                <textarea id="about" name="user_about"></textarea>
-                    </fieldset>	
-        
-                    <fieldset>
-                        <legend><span class="number">3</span> Services </legend>
-                            <label>What kinds of services are you looking for: (Check all that apply)</label><br>
-                                <input type="checkbox" id="social" value="service-social" name="user-service"> <label class="light" for="social">Social Media</label><br>
-                                <input type="checkbox" id="content-blogs" value="service-content-blogs" name="user-service"> <label class="light" for="content-blogs">Content Creation and Blogs</label><br>
-                                <input type="checkbox" id="campaign" value="service-campaign" name="user-service"> <label class="light" for="campaign">Marketing Campaign</label>
-                    </fieldset>
-                <input class="reset" type="reset" value="Reset">
-                <button type="submit">SEND</button>
+ <!-- <form action="mailto:filiatreau14@gmail.com" name="form1" method="post" enctype="text/plain" onload='document.form1.user_email.focus()'> -->
+
+           <div id="contact-form" style="display: none;" class="tabcontent2" >
+                    <form action="H2_index.html" name="form1" method="post" charset="utf-8" onload='document.form1.user_email.focus()'>
+                        <h2>How Can I Help:</h2>
+                            <fieldset>
+                                <legend><span class="number">1</span> Your basic info</legend>
+                                    <label for="name">Name: (Last, First)</label><br>
+                                        <input type="text" id="name" name="user_name"><br>
+                                    <label for="mail">Email:</label><br>
+                                        <input type="text" id="mail" name="user_email">
+                            </fieldset>
+                    
+                            <fieldset>
+                                <legend><span class="number">2</span> Your profile </legend>
+                                    <label for="about">About: (Tell me a little about you business)</label><br>
+                                        <textarea id="about" name="user_about"></textarea>
+                            </fieldset>	
                 
-            </form>
-
-
+                            <fieldset>
+                                <legend><span class="number">3</span> Services </legend>
+                                    <label>What kinds of services are you looking for: (Check all that apply)</label><br>
+                                        <input type="checkbox" id="social" value="service-social" name="user-service"> <label class="light" for="social">Social Media</label><br>
+                                        <input type="checkbox" id="content-blogs" value="service-content-blogs" name="user-service"> <label class="light" for="content-blogs">Content Creation and Blogs</label><br>
+                                        <input type="checkbox" id="campaign" value="service-campaign" name="user-service"> <label class="light" for="campaign">Marketing Campaign</label>
+                            </fieldset>
+                        <input class="reset" type="reset" value="Reset">
+                        <button type="submit" onclick="ValidateEmail(document.form1.user_email)">SEND</button>
+                    </form>
+            </div>
+            <script src="js/H_emailValid.js"></script>
         </main>
         <!-- Contact Form End -->
 
@@ -280,9 +280,10 @@ I am eager to provide all of my clients with content that accurately represents 
         </div>
         
         
-
+        
         <script src="js/H_script.js"></script> 
-        <!-- <script src="js/H_emailValid.js"></script> -->
+        
+
     </body>
 </html>
 
