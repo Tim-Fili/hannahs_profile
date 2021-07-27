@@ -9,7 +9,7 @@ return true;
 }
 else
 {
-alert("You have entered an invalid email address!");
+alert("Invalid email address! Try Again");
 document.form1.user_email.focus();
 return false;
 }
