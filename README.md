@@ -1,7 +1,7 @@
 # hannahs_profile
 This is a work profile for my wife Hannah F.
 It shows her work projects and a contact form. 
-When on the projects tab you can tab through different projects.
+When on the projects tab you can tab through different projects and examples of work.
 When on the contact form you can submit your info to have hannah contact you.
 
 
