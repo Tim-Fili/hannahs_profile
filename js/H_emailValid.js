@@ -3,13 +3,13 @@ function ValidateEmail(inputText)
 var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 if(inputText.value.match(mailformat))
 {
-alert("Valid email address!");
+alert("Valid email address! Go you!");
 document.form1.user_email.focus();
 return true;
 }
 else
 {
-alert("Invalid email address! Try Again");
+alert("Invalid email address! Try Again!");
 document.form1.user_email.focus();
 return false;
 }
