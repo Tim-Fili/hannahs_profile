@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/H_normalize.css">
         <link rel="stylesheet" href="css/H_styles.css">
         <link rel="stylesheet" href="css/H_contact.css">
         <link rel="stylesheet" href="css/H_flexbox.css">
@@ -28,14 +29,17 @@
                         <div class="social-content">
                             <ul class="social-icons">
                                 <li><a href="https://www.upwork.com/freelancers/~01f52c04e808baeaa7/" target="_blank"><i class="fa fa-upwork"></i>
-                                    <!-- <img src="img/upwork-social-link.png" class="upwork"> -->
+                                    <img src="img/social-icons/upwork" class="upwork">
                                 </a></li>
-                                <li><a href="https://www.linkedin.com/in/hannahfiliatreau" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a href="https://www.instagram.com/hannahtreks/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/hannahfiliatreau" target="_blank"><i class="fa fa-linkedin"></i>
+                                    <img src="img/social-icons/linkedin.png" class="linkedin"></a></li>
+                                <li><a href="https://www.instagram.com/hannahtreks/" target="_blank"><i class="fa fa-instagram"></i>
+                                    <img src="img/social-icons/instagram.png" class="instgram">
+                                </a></li>
                             </ul>
                         </div>
                         <p class="introduction-blurb">
-                            ------Small introduction------
+                            I like kittens and poodles. my favorite color is rainbow because it changes day to day, hour to hour. Actually white because it is all of the  colors combined to one. but sometimes I like black. especially when i am listening to MORBID podcast. or reading my books on mortuary sciences.
                         </p>
                         <p class="top-content-tabs">
                             <a class="btn proj-nav-lnk active top" onclick="openInfo2(event, 'portfolio-content')">Portfolio</a> 
@@ -50,7 +54,6 @@
         </header>
         <main>
             <!-- Projects Start -->
-            <!-- *Remember* take a picture/screenshot of the blogs like upwork and make the link to the site -->
            <div id="projects-content" style="display: block;" class="tabs">
                <section class="content">
                     <div>
@@ -68,7 +71,7 @@
                 </section>
                 <section class="project-selection content">
                     <!-- KB Quotes and Images -->
-                    <!-- <div id="KB" style="display: none;" class="tab-content"> -->
+                    <div id="KB" style="display: none;" class="tab-content">
                         <div class="tab-text">
                             <div class>
                                 <h3>Kennedy Blue</h3>
@@ -82,7 +85,7 @@
                                 </p>
                             </div>
                         </div>
-                        <div calss="aside">
+                        <div class="aside">
                             <aside class="project-aside"></aside>
                                 <h3>More Info on this client:</h3>
                                 <p>
@@ -94,12 +97,12 @@
                         </div>
                         <div class="tab-img">
                             <!-- KB IMAGE -->
-                            <img src="img/KB-blog-champagne.jpeg" alt="blog about neutral bridesmaids dresses: champagne" class="project-image">
+                            <img src="img/KB/KB-blog1.jpeg" href="https://www.kennedyblue.com/blogs/weddings/champagne-bridesmaid-dresses-for-your-neutral-wedding" alt="blog about neutral bridesmaids dresses: champagne" class="project-image">
                             <!-- KB IMAGE -->
-                            <img src="img/KB-blog-swatches.jpeg" alt="blog about wedding color swatches" class="project-image">
+                            <img src="img/KB/KB-blog2.jpeg" href="https://www.kennedyblue.com/blogs/weddings/118496772-5-reasons-color-swatches-make-wedding-planning-a-breeze" alt="blog about wedding color swatches" class="project-image">
                         </div>
                     </div>
-                    <!-- ADD SNBB Images -->
+                    <!--  SNBB Quotes and Images -->
                     <div id="SNBB" style="display: none;" class="tab-content">
                         <div class="tab-text">
                             <div>
@@ -127,22 +130,27 @@
                                 </p>
                         </div>
                         <div class="tab-img">
-                            <!-- ADD SNBB IMAGE -->
-                            <img src="#" alt class="project-image">
-                            <!-- ADD SNBB IMAGE -->
-                            <img src="#" alt class="project-image">
+                            <!--  SNBB IMAGE -->
+                            <img src="img/SNBB/SNBB-blog1.jpeg" href="https://something-new-bridal-box.myshopify.com/blogs/news/neutral-bridesmaid-dresses-for-every-type-of-wedding" alt class="project-image">
+                            <!--  SNBB IMAGE -->
+                            <img src="img/SNBB/SNBB-blog1.jpeg" href="https://something-new-bridal-box.myshopify.com/blogs/news/tips-on-how-to-stay-body-positive-while-wedding-dress-shopping" alt class="project-image">
+                            <!-- SNBB IMAGE -->
+                            <img src="img/SNBB/SNBB-social1.jpeg"  alt="social media example grid products" class="project-image">
+                            <!-- SNBB IMAGE -->
+                            <img src="img/SNBB/SNBB-social2.jpeg"  alt="social media example grid wedding dresses" class="project-image">
                         </div>
                     </div>
+       <!-- HOLDING ON PnC CONTENT -->
                     <!-- ADD PnC Images -->
-                    <div id="PnC" style="display: none;" class="tab-content">
+                        <!-- <div id="PnC" style="display: none;" class="tab-content">
                         <div class="tab-text">
                             <div>
                                 <h3>Path & Compass</h3>
-                                <!-- info -->
+            comment -- info --    
                                 <p>Women owned fully stack marketing firm. Servicing many clients from all over the nation. Specializing in client Content Management, Socail Media Management and online presence.</p>
                                 <p>What they say about Path & Compass:
                                     <span class="quoted">
-                                        <!-- PnC QUOTE -->
+            comment-- PnC QUOTE --
                                         If you're looking for someone to create well versed written content for you, Hannah is a perfect option! She was so flexible and responsive to my messages. She excels at what she does, and is a pleasure to work with. Highly recommend her!"
                                     </span>
                                 </p>
@@ -174,12 +182,12 @@
                                 </p>
                         </div>
                         <div class="tab-img">
-                            <!-- ADD PnC-Enchanted Florist IMAGE -->
+            comment -- ADD PnC-Enchanted Florist IMAGE --
                             <img src="#" alt class="project-image">
-                            <!-- ADD PnC-Southern Events IMAGE -->
+            comment -- ADD PnC-Southern Events IMAGE --
                             <img src="#" alt class="project-image">
                         </div>
-                    </div>
+                    </div> -->
                     <!-- ADD SS Images -->
                     <div id="SS" style="display: none;" class="tab-content">
                         <div class="tab-text">
@@ -206,13 +214,16 @@
                                 </p>
                         </div>
                         <div class="tab-img">
-                            <!-- ADD SS IMAGE -->
-                            <img src="#" alt class="project-image">
-                            <!-- ADD SS IMAGE -->
-                            <img src="#" alt class="project-image">
+                            <!-- SS IMAGE -->
+                            <img src="img/SS/SS-blog1.jpeg" href="https://somethingsplendidco.com/blogs/news/national-best-friends-day-honoring-friendships-old-amp-new" alt="Blog - honoring frendships gifts" class="project-image">
+                            <!-- SS IMAGE -->
+                            <img src="img/SS/SS-blog2.jpeg" href="https://somethingsplendidco.com/blogs/news/the-best-way-to-pamper-mom-on-mother-s-day" alt="blog - best way to paper mom gifts" class="project-image">
+                            <!-- SS IMAGE -->
+                            <img src="img/SS/SS-blog3.jpeg" href="https://somethingsplendidco.com/blogs/news/a-toast-to-two-engagement-wedding-gifts-for-the-happy-couple" alt="blog - newly engaged gifts bo" class="project-image">
+
                         </div>
                     </div>
-                    <!-- ADD MPE Images -->
+                    <!-- MPE Quotes Images -->
                     <div id="MPE" style="display: none;" class="tab-content">
                         <div class="tab-text">
                             <div>
@@ -238,17 +249,15 @@
                                 </p>
                         </div>
                         <div class="tab-img">
-                            <!-- ADD MPE IMAGE -->
-                            <img src="#" alt class="project-image">
-                            <!-- ADD MPE IMAGE -->
-                            <img src="#" alt class="project-image">
+                            <!-- MPE IMAGE -->
+                            <img src="img/MPE/MPE-social1.jpeg" alt="social media example of grid wedding venue" class="project-image">
                         </div>
                     </div>
                 </section>
            </div>
            <!-- Projects End -->
            <!-- Content Form Start -->
-           <!-- <div id="contact-form content" style="display: none;" class="tabs"> -->
+           <div id="contact-form content" style="display: none;" class="tabs">
             <form action="H_index.html" method="post">
                 <h2>How Can I Help:</h2>
                     <fieldset>
@@ -284,16 +293,15 @@
                 <div class="">
                     <h3>Companies I have worked with:</h3>
                     <ul class="previous-company-list">
-                        <li>----ADD-----</li>
-                        <li>----ADD-----</li>
-                        <li>-----ADD----</li>
+                        <li>Enchated Florist</li>
+                        <li>Southern Events</li>
+                        <li>Frenchie Fries Co.</li>
                     </ul>
                     <h3>Things I'm proficient at:</h3>
-                 <!-- ADD Skills  -->
                     <ul class="skills-list">
-                        <li>----ADD-----</li>
-                        <li>----ADD-----</li>
-                        <li>-----ADD----</li>
+                        <li>Search Engine Optimization</li>
+                        <li>Editorial Calendar strategization</li>
+                        <li>Social Media Strategy Creation and Implementation</l>
                     </ul>
                 </div>
             </section>
@@ -306,7 +314,7 @@
         
         
         <!-- TALK THIS THROUGH WITH DON -->
-        <!-- <script>
+        <script>
 
             function openInfo(evt, toolsName) {
                 var i, tabcontent, tablinks;
@@ -328,7 +336,7 @@
                 for (i = 0; i < tabcontent.length; i++) {
                     tabcontent[i].style.display = "none";
                 }
-                tablinks = document.getElementsByClassName("proj-nav-lnk");
+                tablinks = document.getElementsByClassName("proj-nav-link");
                 for (i = 0; i < tablinks.length; i++) {
                     tablinks[i].className = tablinks[i].className.replace(" active", "");
                 }
@@ -336,7 +344,7 @@
                 evt.currentTarget.className += " active";                
                 }
              
-        </script>  -->
+        </script> 
     </body>
 </html>
 
