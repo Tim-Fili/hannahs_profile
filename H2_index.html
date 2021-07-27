@@ -17,15 +17,9 @@
                 <section class="contact-content content">
                     <div class="contact-info">
                         <h1 class="name">Hannah Filiatreau</h1>
-                        <h2 class="job-title">Content Creator | Social Media Manager</h3>
-                        <p class="phone">
-                            <strong>C:</strong>
-                            502.827.2973
-                        </p>
-                        <p class="email">
-                            <strong>E:</strong>
-                            Filiatreau14@gmail.com
-                        </p>
+                        <h2>Content Creator | Social Media Manager</h3>
+                        <p><span><strong>C:</strong>502.827.2973</span></p>
+                        <p><span><strong>E:</strong>Filiatreau14@gmail.com</span></p>
                         <div class="social-content">
                             <ul class="social-icons">
                                 <li><a href="https://www.upwork.com/freelancers/~01f52c04e808baeaa7/" target="_blank"><i class="fa fa-upwork"></i>
@@ -38,26 +32,26 @@
                                 </a></li>
                             </ul>
                         </div>
-                        <p class="introduction-blurb">
+                        <p>     
                             Hi, I’m Hannah, a freelancer with a passion for content writing and social media management.
 With 5 years of experience in the wedding and events industry, I bring a passion for content that is not only on-trend, but actually works for your business. 
 My skills include content writing for blogs and social media. As well as editorial calendar creation and social media strategy and implementation.
 I am eager to provide all of my clients with content that accurately represents their brand, and is informative yet engaging.
                         </p>
-                        <p class="top-content-tabs">
-                            <a class="btn project-nav-link active top" onclick="openInfo2(event, 'portfolio-content')">Portfolio</a> 
-                            <a class="btn project-nav-link top " onclick="openInfo2(event, 'contact-form')">Contact</a>
+                        <p>
+                            <a class="btn project-nav-link" onclick="openInfo2(event, 'portfolio-content')">Portfolio</a> 
+                            <a class="btn project-nav-link" onclick="openInfo2(event, 'contact-form')">Contact</a>
                         </p>
                     </div>
                     <div class="contact-photo">
-                        <img src="img/hannah.jpeg" alt="Hannah Filiatreau in a hat " class="contact-photo" width="300" height="400">
+                        <img src="img/hannah.jpeg" alt="Hannah Filiatreau in a hat " class="contact-img" width="300" height="400">
                     </div>
                 </section>
             </div>
         </header>
         <main>
             <!-- Projects Start -->
-           <div id="red" style="display: block;" class="tabs">
+           <div id="portfolio-content" style="display: block;" class="tabcontent2">
                <section class="content">
                     <div>
                         <h2 class="projects-header">
@@ -65,16 +59,17 @@ I am eager to provide all of my clients with content that accurately represents 
                         </h2>
                     </div>
                 </section>
+
                 <section class="project-nav content">
-                    <a class="btn project-nav-link">Kennedy Blue</a>
-                    <a class="btn project-nav-link">Something New Bridal Box</a>
-                    <a class="btn project-nav-link">Path & Compass</a>
-                    <a class="btn project-nav-link">Something Splendid Co.</a>
-                    <a class="btn project-nav-link">Mill Pond Estate</a>
+                    <a class="btn project-nav-link" onclick="openInfo(event, 'KB')">Kennedy Blue</a>
+                    <a class="btn project-nav-link" onclick="openInfo(event, 'SNBB')">Something New Bridal Box</a>
+                    <a class="btn project-nav-link" onclick="openInfo(event, 'SS')">Something Splendid Co.</a>
+                    <a class="btn project-nav-link" onclick="openInfo(event, 'MPE')">Mill Pond Estate</a>
                 </section>
+
                 <section class="project-selection content">
-                    <!-- KB Quotes and Images -->
-                    <div id="KB"  class="tabcontent">
+                   
+                    <div id="KB" style="display: block;"  class="tabcontent">
                         <div class="tab-text">
                             <div class>
                                 <h3>Kennedy Blue</h3>
@@ -100,21 +95,27 @@ I am eager to provide all of my clients with content that accurately represents 
                         </div>
                         <div class="tab-img">
                             <!-- KB IMAGE -->
-                            <img src="img/KB/KB-blog1.jpeg" href="https://www.kennedyblue.com/blogs/weddings/champagne-bridesmaid-dresses-for-your-neutral-wedding" alt="blog about neutral bridesmaids dresses: champagne" class="project-image">
+                            
+                            <a href="https://www.kennedyblue.com/blogs/weddings/champagne-bridesmaid-dresses-for-your-neutral-wedding">
+                                <img src="img/KB/KB-blog1.jpeg" title="Champagne bridesmaid dresses for your neutral wedding" alt="blog about neutral bridesmaids dresses: champagne" class="project-image">
+                            </a>
                             <!-- KB IMAGE -->
-                            <img src="img/KB/KB-blog2.jpeg" href="https://www.kennedyblue.com/blogs/weddings/118496772-5-reasons-color-swatches-make-wedding-planning-a-breeze" alt="blog about wedding color swatches" class="project-image">
+                            <a href="https://www.kennedyblue.com/blogs/weddings/118496772-5-reasons-color-swatches-make-wedding-planning-a-breeze" > 
+                                <img src="img/KB/KB-blog2.jpeg" title="5 reasons color swatches make wedding planning a breeze" alt="blog about wedding color swatches" class="project-image">
+                            </a>
                         </div>
                     </div>
-                    <!--  SNBB Quotes and Images -->
-                    <div id="SNBB"  class="tabcontent">
+                   
+                    <div id="SNBB" style="display: none;"   class="tabcontent">
                         <div class="tab-text">
-                            <div>
+                            <div class>
                                 <h3>Something New Bridal Box</h3>
-                                <p>Every Bride's bridal needs in a 12 month subscription box.</p>
+                                <!-- info -->
+                                <p>|<i> Every Bride's bridal needs in a 12 month subscription box </i>|</p>
                                 <p>What they say about Something New Bridal Box:
                                     <span class="quoted">
                                         <!-- SNBB QUOTE -->
-                                        Hannah was prompt in answering back to briefs and provided interesting article pitches. It was a joy to read her articles and I would highly recommend others to collaborate with her. She was also very easy to communicate with, especially accommodating and understanding. I look forward to working with her in the future!
+                                        "Hannah was prompt in answering back to briefs and provided interesting article pitches. It was a joy to read her articles and I would highly recommend others to collaborate with her. She was also very easy to communicate with, especially accommodating and understanding. I look forward to working with her in the future!"
                                     </span>
                                 </p>
                             </div>
@@ -133,75 +134,31 @@ I am eager to provide all of my clients with content that accurately represents 
                                 </p>
                         </div>
                         <div class="tab-img">
-                            <!--  SNBB IMAGE -->
-                            <img src="img/SNBB/SNBB-blog1.jpeg" href="https://something-new-bridal-box.myshopify.com/blogs/news/neutral-bridesmaid-dresses-for-every-type-of-wedding" alt class="project-image">
-                            <!--  SNBB IMAGE -->
-                            <img src="img/SNBB/SNBB-blog2.jpeg" href="https://something-new-bridal-box.myshopify.com/blogs/news/tips-on-how-to-stay-body-positive-while-wedding-dress-shopping" alt class="project-image">
-                            <!-- SNBB IMAGE -->
+                            <!--  SNBB Blog/Link IMAGE -->
+                            <a href="https://something-new-bridal-box.myshopify.com/blogs/news/neutral-bridesmaid-dresses-for-every-type-of-wedding">
+                                <img src="img/SNBB/SNBB-blog1.jpeg" title="Neutral bridesmaid dresses for every type of wedding." alt="blog about neutral brides maid dresses" class="project-image">
+                            </a>
+                            <!--  SNBB Blog/Link IMAGE -->
+                            <a href="https://something-new-bridal-box.myshopify.com/blogs/news/tips-on-how-to-stay-body-positive-while-wedding-dress-shopping">
+                                <img src="img/SNBB/SNBB-blog2.jpeg" title="Tips on how to stay body positive while wedding dress shopping." alt="Blog about wedding dress shopping and staying body positive" class="project-image">
+                            </a>
+                            <!-- SNBB Social Media IMAGE -->
                             <img src="img/SNBB/SNBB-social1.jpeg"  alt="social media example grid products" class="project-image">
-                            <!-- SNBB IMAGE -->
+                            <!-- SNBB Social Media IMAGE -->
                             <img src="img/SNBB/SNBB-social2.jpeg"  alt="social media example grid wedding dresses" class="project-image">
                         </div>
                     </div>
-       <!-- HOLDING ON PnC CONTENT -->
-                    <!-- ADD PnC Images -->
-                        <!-- <div id="PnC"  class="tabcontent">
-                        <div class="tab-text">
-                            <div>
-                                <h3>Path & Compass</h3>
-            comment -- info --    
-                                <p>Women owned fully stack marketing firm. Servicing many clients from all over the nation. Specializing in client Content Management, Socail Media Management and online presence.</p>
-                                <p>What they say about Path & Compass:
-                                    <span class="quoted">
-            comment-- PnC QUOTE --
-                                        If you're looking for someone to create well versed written content for you, Hannah is a perfect option! She was so flexible and responsive to my messages. She excels at what she does, and is a pleasure to work with. Highly recommend her!"
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="aside">
-                            <aside class="project-aside"></aside>
-                                <h3>More Info and Sample ofClients:</h3>
-                                <h2>Path & Compass</h2>
-                                <p>
-                                    <a href="https://www.pathandcompass.com/" target="_blank">Path&Compass</a>
-                                </p>
-                                <p>
-                                    <a href="https://www.pathandcompass.com/about/" target="_blank">The Team</a>
-                                </p>
-                                <h2>Enchanted Forist</h2>
-                                <p>
-                                    <a href="https://enchantedfloristtn.com/blog/" target="_blank">Blogs</a>
-                                </p>
-                                <p>
-                                    <a href="https://www.instagram.com/enchantedfloristtn/?hl=en" target="_blank">Instagram</a>
-                                </p>
-                                <h2>Southern Events</h2>
-                                <p>
-                                    <a href="https://southerneventsonline.com/blog/" target="_blank">Blogs</a>
-                                </p>
-                                <p>
-                                    <a href="https://www.instagram.com/southerneventsonline/?hl=en" target="_blank">Instagram</a>
-                                </p>
-                        </div>
-                        <div class="tab-img">
-            comment -- ADD PnC-Enchanted Florist IMAGE --
-                            <img src="#" alt class="project-image">
-            comment -- ADD PnC-Southern Events IMAGE --
-                            <img src="#" alt class="project-image">
-                        </div>
-                    </div> -->
-                    <!-- ADD SS Images -->
-                    <div id="SS" class="tabcontent">
+                    
+                    <div id="SS" style="display: none;"  class="tabcontent">
                         <div class="tab-text">
                             <div>
                                 <h3>Something Splendid Co.</h3>
                                 <!-- info -->
-                                <p>All you gift ideas coming straight to you through the mail.</p>
+                                <p>|<i> All you gift ideas coming straight to you through the mail </i>|</p>
                                 <p>What they say about Something Splendid Co:
                                     <span class="quoted">
                                         <!-- QUOTE -->
-                                        I love working with Hannah! She's not only a great writer but also very punctual. I can't say enough, except you're missing out if you don't choose to work with Hannah for your next project.
+                                        "I love working with Hannah! She's not only a great writer but also very punctual. I can't say enough, except you're missing out if you don't choose to work with Hannah for your next project."
                                     </span>
                                 </p>
                             </div>
@@ -218,22 +175,27 @@ I am eager to provide all of my clients with content that accurately represents 
                         </div>
                         <div class="tab-img">
                             <!-- SS IMAGE -->
-                            <img src="img/SS/SS-blog1.jpeg" href="https://somethingsplendidco.com/blogs/news/national-best-friends-day-honoring-friendships-old-amp-new" alt="Blog - honoring frendships gifts" class="project-image">
+                            <a href="https://somethingsplendidco.com/blogs/news/national-best-friends-day-honoring-friendships-old-amp-new">
+                                <img src="img/SS/SS-blog1.jpeg" title="National best friends day honoring friendships old and new" alt="Blog about gifts to honor frendships" class="project-image">
+                            </a>
                             <!-- SS IMAGE -->
-                            <img src="img/SS/SS-blog2.jpeg" href="https://somethingsplendidco.com/blogs/news/the-best-way-to-pamper-mom-on-mother-s-day" alt="blog - best way to paper mom gifts" class="project-image">
+                            <a href="https://somethingsplendidco.com/blogs/news/the-best-way-to-pamper-mom-on-mother-s-day">
+                                <img src="img/SS/SS-blog2.jpeg" title="The best way to pamper mom on Mothers' Day." alt="blog about the best way to paper mom for mothers day" class="project-image">
+                            </a>
                         </div>
+                      
                     </div>
-                    <!-- MPE Quotes Images -->
-                    <div id="MPE" class="tabcontent">
+                    
+                    <div id="MPE" style="display: none;"  class="tabcontent">
                         <div class="tab-text">
                             <div>
                                 <h3>Mill Pond Estate</h3>
                                 <!-- info -->
-                                <p>beautiful Tampa Bay,FL wedding and event venue.</p>
+                                <p>|<i> Beautiful Tampa Bay,FL wedding and event venue </i>|</p>
                                 <p>What they say about Mill Pond Estate:
                                     <span class="quoted">
                                         <!-- QUOTE -->
-                                        Hannah was absolutely great! She was able to do as asked within a timely manner. However what sets her apart from other writers so far is the quality of her work. She went above and beyond, asked great questions, was able to match the writing style, and added appropriate links. Will definitely be hiring again! A great writer.
+                                        "Hannah was absolutely great! She was able to do as asked within a timely manner. However what sets her apart from other writers so far is the quality of her work. She went above and beyond, asked great questions, was able to match the writing style, and added appropriate links. Will definitely be hiring again! A great writer."
                                     </span>
                                 </p>
                             </div>
@@ -250,15 +212,18 @@ I am eager to provide all of my clients with content that accurately represents 
                         </div>
                         <div class="tab-img">
                             <!-- MPE IMAGE -->
-                            <img src="img/MPE/MPE-social1.jpeg" alt="social media example of grid wedding venue" class="project-image">
+                                <img src="img/MPE/MPE-social1.jpeg" alt="social media example of grid wedding venue" class="project-image">
                         </div>
                     </div>
+
                 </section>
            </div>
-           <!-- Projects End -->
-           <!-- Content Form Start -->
-           <div id="contact-form content" style="display: none;" class="tabs">
-            <form action="H_index.html" method="post">
+ <!-- Projects End -->
+
+ <!-- Content Form Start -->
+ 
+           <div id="contact-form" style="display: none;" class="tabcontent2">
+            <form action="mailto:filiatreau14@gmail.com" name="form1" method="post" enctype="text/plain">
                 <h2>How Can I Help:</h2>
                     <fieldset>
                         <legend><span class="number">1</span> Your basic info</legend>
@@ -281,13 +246,15 @@ I am eager to provide all of my clients with content that accurately represents 
                                 <input type="checkbox" id="content-blogs" value="service-content-blogs" name="user-service"> <label class="light" for="content-blogs">Content Creation and Blogs</label><br>
                                 <input type="checkbox" id="campaign" value="service-campaign" name="user-service"> <label class="light" for="campaign">Marketing Campaign</label>
                     </fieldset>
+                <input class="reset" type="reset" value="Reset">
                 <button type="submit">SEND</button>
+                
             </form>
-           <!-- </div> -->
-           <div>
-           </div>
+
+
         </main>
         <!-- Contact Form End -->
+
         <div class="band pre-footer">
             <section class="past-clients content">
                 <div class="">
@@ -313,38 +280,9 @@ I am eager to provide all of my clients with content that accurately represents 
         </div>
         
         
-        <!-- TALK THIS THROUGH WITH DON -->
-        <script>
 
-            function openInfo(evt, toolsName) {
-                var i, tabcontent, tablinks;
-                tabcontent = document.getElementsByClassName("tabcontent");         
-                for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-                    }
-                tablinks = document.getElementsByClassName("project-nav-link");
-                for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-                }
-
-                document.getElementById(toolsName).style.display = "block";
-                evt.currentTarget.className += " active";                
-            } 
-            // function openInfo2(evt, toolsName2) {
-            //     var i, tabcontent, tablinks;
-            //     tabcontent = document.getElementsByClassName("tabcontent");         
-            //     for (i = 0; i < tabcontent.length; i++) {
-            //         tabcontent[i].style.display = "none";
-            //     }
-            //     tablinks = document.getElementsByClassName("proj-nav-link");
-            //     for (i = 0; i < tablinks.length; i++) {
-            //         tablinks[i].className = tablinks[i].className.replace("active", "");
-            //     }
-            //     document.getElementById(toolsName2).style.display = "block";
-            //     evt.currentTarget.className += " active";                
-            //     }
-             
-        </script> 
+        <script src="js/H_script.js"></script> 
+        <!-- <script src="js/H_emailValid.js"></script> -->
     </body>
 </html>
 
