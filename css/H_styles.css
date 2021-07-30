@@ -96,18 +96,14 @@ p {
 .social-content {
       margin: 1rem 0;
 }
-/* .contact-photo {
-      display:block;
-      margin-bottom: 1rem;
-      margin-left: 1rem;
-      margin-right: auto;
-} */
-/* .contact-photo img {
+.contact-img {
     height: auto;
-    width: 100%;
+    width: 300px;
     margin: 0;
     padding: 1rem;
-} */
+    border-radius: 25%;
+    /* border: 2px solid blue; */
+}
   /* This seems redundant so far */
 .tab-content {
     margin: 0 0;
@@ -150,7 +146,10 @@ h2.projects-header  {
     border-bottom: red;
     justify-content: center;
 }
-
+.portfolio-content {
+    justify-content: center;
+    margin: auto;
+}
 .project-nav-link.active {
     border-bottom: red;
 }
@@ -299,7 +298,7 @@ h3.tab-text::after {
     font-weight: 500;
     justify-content: center;
     letter-spacing: 5px;
-    margin: 0.5rem 0;
+    margin: 1rem auto;
     max-width: 500px;
     padding: 0.5rem 1rem;
     text-align: center;
@@ -325,6 +324,7 @@ a {
     border-bottom: 2px solid #d3d3d3;
     color:#fff;
     text-decoration: none;
+    justify-content: center;
 }
 a:hover {
     border-bottom-color: #104088;
@@ -392,60 +392,55 @@ ul.skills-list li {
 /* mobile media queries */
 /* small */
 @media (max-width: 576px) { 
-    .contact-photo {
-        margin: 0 auto;
-        max-width: 300px;
-        justify-content: center;
+    /* img {
+        width:1000px;
+        height: auto;
+    } */
+    .contact-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;  
+    }
+
+    .btn {
+        margin: .5rem auto;
+        width: 300px;
     }
     .name {
         /* margin-top: 1rem; */
         padding-top: 1rem;
     }
 }
-/* @media screen and (min-width: 768px) {
-    .contact-content {
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-    .contact-info {
+@media screen and (min-width: 577px) and (max-width: 768px) {
+    /* img {
         width: 100%;
-        justify-content: center;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+    .contact-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 45%;  
+       
     }
-    .contact-photo img {
-        width: 100%;
-        margin: auto;
-        justify-content: center;
-    }
-    .contact-photo img {
-        max-width: 300px;
-        margin:  auto;
-        align-content: center;
-        justify-content: center;
-    }
-     .name {
-         padding-top: 1rem;
-     }
-} */
+    
+}
  @media (min-width: 769px) {
      .contact-content {
          flex-direction: row-reverse;
          justify-content: center;
+         width: 100%;
      }
      .contact-info {
          width: 50%;
-         justify-content: center;
+         
      }
-     /* .contact-photo {
-        width: 50%;
-        justify-content: center;
-     } */
-     .contact-photo img {
-        height: auto;
-        max-width: 400px;
-        margin: auto;
+     .contact-img {
+        max-width: 100%;
         padding: 1rem;
-        justify-content: center;
-        align-content: center;
     }
 /* what does this do */
      .tab-text > div:nth-child(2n) {
@@ -471,6 +466,7 @@ ul.skills-list li {
     .tab-text {
         flex-direction: row;
     }
+   
  }
 
  /* potential employer print resume */
